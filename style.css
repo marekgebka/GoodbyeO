@@ -1,4 +1,5 @@
 :root {
+    --notSoDark: #4a4e51;
     --dark: #202124;
     --action: #3c4043;
     --actionRed: #ea4335;
@@ -23,9 +24,25 @@ body {
 
 .tile {
     height: 300px;
-    outline: 1px solid white;
+    padding:5px;
     width: auto;
 }
+
+.tile-imgWrap {
+    align-items: center;
+    background: var(--notSoDark);
+    border-radius: 20px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tile-img {
+    object-fit: contain;
+}
+
+/* FOOTER W. ACTIONS and MORE */
 
 .nameAndActions {
     align-items: center;
