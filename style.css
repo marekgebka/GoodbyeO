@@ -36,10 +36,43 @@ body {
     height: 100%;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 .tile-img {
     object-fit: contain;
+}
+
+.tile-name {
+    bottom: 1rem;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    position: absolute;
+    text-shadow: 1px 1px 3px #202124;
+    left: 8px;
+    z-index: 5;
+}
+
+.tile-text {
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    display: flex;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    position: absolute;  
+    transform: translateY(0);
+    transition: ease-in-out 250ms transform;
+    z-index: 10;
+}
+
+.tile-text.hidden {
+    opacity: 0;
+    transform: translateY(100%);
 }
 
 /* FOOTER W. ACTIONS and MORE */
@@ -50,6 +83,7 @@ body {
     bottom: 0;
     color: #fff;
     display: flex;
+    font-weight: 500;
     height: 80px;
     justify-content: space-between;
     left: 0;
