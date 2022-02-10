@@ -55,6 +55,10 @@ body {
     margin-top: 20%;
 }
 
+.tile-img--pushup {
+    margin-bottom: 20%;
+}
+
 .tile:hover .tile-img {
     filter: blur(8px);
 }
